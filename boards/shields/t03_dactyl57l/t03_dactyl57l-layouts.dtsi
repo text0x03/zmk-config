@@ -6,10 +6,48 @@
         display-name = "Default Layout";
         transform = <&default_transform>;
         kscan = <&kscan>;
-
+        
+        // 必须提供 70 个按键来匹配 default_transform 的映射数量
         keys =
-            <&key_physical_attrs 100 100   0   0  0 0 0>
-            , <&key_physical_attrs 100 100 100   0  0 0 0>
+            <&key_physical_attrs 100 100 0 0 0 0 0>, <&key_physical_attrs 100 100 0 0 0 0 0>,
+            <&key_physical_attrs 100 100 0 0 0 0 0>, <&key_physical_attrs 100 100 0 0 0 0 0>,
+            <&key_physical_attrs 100 100 0 0 0 0 0>, <&key_physical_attrs 100 100 0 0 0 0 0>,
+            <&key_physical_attrs 100 100 0 0 0 0 0>, <&key_physical_attrs 100 100 0 0 0 0 0>,
+            <&key_physical_attrs 100 100 0 0 0 0 0>, <&key_physical_attrs 100 100 0 0 0 0 0>,
+            <&key_physical_attrs 100 100 0 0 0 0 0>, <&key_physical_attrs 100 100 0 0 0 0 0>,
+            <&key_physical_attrs 100 100 0 0 0 0 0>, <&key_physical_attrs 100 100 0 0 0 0 0>,
+
+            <&key_physical_attrs 100 100 0 0 0 0 0>, <&key_physical_attrs 100 100 0 0 0 0 0>,
+            <&key_physical_attrs 100 100 0 0 0 0 0>, <&key_physical_attrs 100 100 0 0 0 0 0>,
+            <&key_physical_attrs 100 100 0 0 0 0 0>, <&key_physical_attrs 100 100 0 0 0 0 0>,
+            <&key_physical_attrs 100 100 0 0 0 0 0>, <&key_physical_attrs 100 100 0 0 0 0 0>,
+            <&key_physical_attrs 100 100 0 0 0 0 0>, <&key_physical_attrs 100 100 0 0 0 0 0>,
+            <&key_physical_attrs 100 100 0 0 0 0 0>, <&key_physical_attrs 100 100 0 0 0 0 0>,
+            <&key_physical_attrs 100 100 0 0 0 0 0>, <&key_physical_attrs 100 100 0 0 0 0 0>,
+
+            <&key_physical_attrs 100 100 0 0 0 0 0>, <&key_physical_attrs 100 100 0 0 0 0 0>,
+            <&key_physical_attrs 100 100 0 0 0 0 0>, <&key_physical_attrs 100 100 0 0 0 0 0>,
+            <&key_physical_attrs 100 100 0 0 0 0 0>, <&key_physical_attrs 100 100 0 0 0 0 0>,
+            <&key_physical_attrs 100 100 0 0 0 0 0>, <&key_physical_attrs 100 100 0 0 0 0 0>,
+            <&key_physical_attrs 100 100 0 0 0 0 0>, <&key_physical_attrs 100 100 0 0 0 0 0>,
+            <&key_physical_attrs 100 100 0 0 0 0 0>, <&key_physical_attrs 100 100 0 0 0 0 0>,
+            <&key_physical_attrs 100 100 0 0 0 0 0>, <&key_physical_attrs 100 100 0 0 0 0 0>,
+
+            <&key_physical_attrs 100 100 0 0 0 0 0>, <&key_physical_attrs 100 100 0 0 0 0 0>,
+            <&key_physical_attrs 100 100 0 0 0 0 0>, <&key_physical_attrs 100 100 0 0 0 0 0>,
+            <&key_physical_attrs 100 100 0 0 0 0 0>, <&key_physical_attrs 100 100 0 0 0 0 0>,
+            <&key_physical_attrs 100 100 0 0 0 0 0>, <&key_physical_attrs 100 100 0 0 0 0 0>,
+            <&key_physical_attrs 100 100 0 0 0 0 0>, <&key_physical_attrs 100 100 0 0 0 0 0>,
+            <&key_physical_attrs 100 100 0 0 0 0 0>, <&key_physical_attrs 100 100 0 0 0 0 0>,
+            <&key_physical_attrs 100 100 0 0 0 0 0>, <&key_physical_attrs 100 100 0 0 0 0 0>,
+
+            <&key_physical_attrs 100 100 0 0 0 0 0>, <&key_physical_attrs 100 100 0 0 0 0 0>,
+            <&key_physical_attrs 100 100 0 0 0 0 0>, <&key_physical_attrs 100 100 0 0 0 0 0>,
+            <&key_physical_attrs 100 100 0 0 0 0 0>, <&key_physical_attrs 100 100 0 0 0 0 0>,
+            <&key_physical_attrs 100 100 0 0 0 0 0>, <&key_physical_attrs 100 100 0 0 0 0 0>,
+            <&key_physical_attrs 100 100 0 0 0 0 0>, <&key_physical_attrs 100 100 0 0 0 0 0>,
+            <&key_physical_attrs 100 100 0 0 0 0 0>, <&key_physical_attrs 100 100 0 0 0 0 0>,
+            <&key_physical_attrs 100 100 0 0 0 0 0>, <&key_physical_attrs 100 100 0 0 0 0 0>
             ;
     };
 };
