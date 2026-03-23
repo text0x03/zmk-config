@@ -8,10 +8,10 @@
         default_layer {
             bindings = <
                 &kp A &kp B &kp C &kp D &kp E &kp F &kp G    &kp H &kp I &kp J &kp K &kp L &kp M &kp N
-                &kp A &kp B &kp C &kp D &kp E &kp F &kp G    &kp H &kp I &kp J &kp K &kp L &kp M &kp N
-                &kp A &kp B &kp C &kp D &kp E &kp F &kp G    &kp H &kp I &kp J &kp K &kp L &kp M &kp N
-                &kp A &kp B &kp C &kp D &kp E &kp F &kp G    &kp H &kp I &kp J &kp K &kp L &kp M &kp N
-                &kp A &kp B &kp C &kp D &kp E &kp F &kp G    &kp H &kp I &kp J &kp K &kp L &kp M &kp N
+                &kp O &kp B &kp C &kp D &kp E &kp F &kp G    &kp H &kp I &kp J &kp K &kp L &kp M &kp O
+                &kp P &kp B &kp C &kp D &kp E &kp F &kp G    &kp H &kp I &kp J &kp K &kp L &kp M &kp P
+                &kp Q &kp B &kp C &kp D &kp E &kp F &kp G    &kp H &kp I &kp J &kp K &kp L &kp M &kp Q
+                &kp R &kp B &kp C &kp D &kp E &kp F &kp G    &kp H &kp I &kp J &kp K &kp L &kp M &kp R
             >;
         };
     };
