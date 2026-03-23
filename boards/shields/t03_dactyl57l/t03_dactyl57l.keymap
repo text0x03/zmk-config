@@ -1,17 +1,36 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
+// 定义层的序号，方便阅读和管理
+#define DEFAULT 0
+#define LOWER   1
+
 / {
     keymap {
         compatible = "zmk,keymap";
 
+        // 第 0 层：默认层
         default_layer {
             bindings = <
-                &kp A &kp B &kp C &kp D &kp E &kp F &kp G    &kp H &kp I &kp J &kp K &kp L &kp M &kp N
-                &kp O &kp B &kp C &kp D &kp E &kp F &kp G    &kp H &kp I &kp J &kp K &kp L &kp M &kp O
-                &kp P &kp B &kp C &kp D &kp E &kp F &kp G    &kp H &kp I &kp J &kp K &kp L &kp M &kp P
-                &kp Q &kp B &kp C &kp D &kp E &kp F &kp G    &kp H &kp I &kp J &kp K &kp L &kp M &kp Q
-                &kp R &kp B &kp C &kp D &kp E &kp F &kp G    &kp H &kp I &kp J &kp K &kp L &kp M &kp R
+                &kp Q &kp W &kp E &kp R &kp T &kp Y &kp U    &kp I &kp O &kp P &kp A &kp S &kp D &kp F
+                &kp Q &kp W &kp E &kp R &kp T &kp Y &kp U    &kp I &kp O &kp P &kp A &kp S &kp D &kp F
+                &kp Q &kp W &kp E &kp R &kp T &kp Y &kp U    &kp I &kp O &kp P &kp A &kp S &kp D &kp F
+                // 注意这里：我在左手最后一列的倒数第二个键放了 &mo LOWER
+                &kp Q &kp W &kp E &kp R &kp T &kp Y &mo LOWER &kp I &kp O &kp P &kp A &kp S &kp D &kp F
+                &kp Q &kp W &kp E &kp R &kp T &kp Y &kp U    &kp I &kp O &kp P &kp A &kp S &kp D &kp F
+            >;
+        };
+
+        // 第 1 层：按下 &mo LOWER 时激活的层
+        lower_layer {
+            bindings = <
+                // 测试：第一排改成数字键 1-7 和 8-0
+                &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7    &kp N8 &kp N9 &kp N0 &trans &trans &trans &trans
+                // &trans 表示“透明”，按下时会穿透到下方的 DEFAULT 层获取键值
+                &trans &trans &trans &trans &trans &trans &trans    &trans &trans &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans &trans &trans    &trans &trans &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans &trans &trans    &trans &trans &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans &trans &trans    &trans &trans &trans &trans &trans &trans &trans
             >;
         };
     };
