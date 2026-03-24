@@ -23,10 +23,10 @@
 
 // 定义宏处理 00
 / {
-    macros {
+macros {
         macro_00: macro_00 {
             compatible = "zmk,behavior-macro";
-            #binding-cells = <0>; [cite: 5]
+            #binding-cells = <0>;
             bindings = <&kp N0 &kp N0>;
         };
     };
