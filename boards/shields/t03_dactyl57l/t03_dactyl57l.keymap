@@ -32,7 +32,7 @@ macros {
     };
 
     keymap {
-        compatible = "zmk,keymap"; [cite: 6]
+        compatible = "zmk,keymap";
 
         // 第 0 层：默认层 (Default Layer)
         default_layer {
